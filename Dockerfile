@@ -2,10 +2,10 @@ FROM golang:1.20.5-alpine
 
 RUN mkdir /src
 
-COPY src/go.mod /src
-COPY src/go.sum /src
+COPY go.mod /src
+COPY go.sum /src
 
-COPY ./src/ /src
+COPY ./ /src
 
 WORKDIR /src
 
